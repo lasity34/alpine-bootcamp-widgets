@@ -1,0 +1,18 @@
+body {
+    background-color:rgb(247, 239, 229);
+   
+    font-family: 'Tsukimi Rounded', sans-serif;
+}
+
+h1 {
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.2);
+    font-family: 'Tsukimi Rounded', sans-serif;
+    color: #333;
+}
+
+.widget_container {
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

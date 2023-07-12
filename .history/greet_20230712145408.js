@@ -28,10 +28,8 @@ function greet() {
       }
       if (!regex.test(this.name)) {
         this.notify('Please don\'t use special characters');
-        this.name = ''
         return false;
       }
-      
       return true;
     },
     notify(msg) {

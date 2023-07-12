@@ -8,7 +8,7 @@ function greet() {
     notification: '',
     showNotification: false,
     greeting() {
-      if (!this.validateInput()) {
+      if (!this.validateInput) {
         return;
       }
       if (this.language === 'English') {
@@ -18,7 +18,6 @@ function greet() {
       } else if (this.language === 'Spanish') {
         this.message = `🇪🇸 Hola ${this.name} 🇪🇸`
       }
-      this.name = ''
     },
     validateInput() {
       let regex = /^[a-zA-Z]+$/;  // Regex for letters and spaces only
@@ -28,10 +27,8 @@ function greet() {
       }
       if (!regex.test(this.name)) {
         this.notify('Please don\'t use special characters');
-        this.name = ''
         return false;
       }
-      
       return true;
     },
     notify(msg) {
